@@ -1,0 +1,183 @@
+@font-face{
+font-family: 'poppins';
+src: url('https://fonts.google.com/specimen/Poppins');
+font-weight: normal;
+font-style: normal;
+}
+
+    
+
+html{
+    opacity: 10;
+    background: linear-gradient(90deg,rgb(83, 13, 139),rgb(105, 56, 219));
+}
+body{
+    margin-top: 0px;
+    background-image: url('https://i.imgur.com/0KWzYrD.png');
+    background-size:cover ;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin:0 auto;
+    height: 700px;
+}
+
+main{
+    
+    display:flex;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.navbar {
+    display: block;
+    padding-bottom:  50px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.navbar img{
+width: 15%;
+padding-top: 20px;
+}
+main{
+    color: white;
+  
+}
+main h1{
+    font-size: 35px;
+    font-family:sans-serif; 
+}
+div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+main div p{
+    font-family:'Poppins'  ;
+    padding-top: 15px;
+    color : white;
+    font-size: 20px;
+    display: grid;
+   
+}
+div button{
+    border:none;
+    color:rgb(81, 20, 150);
+    background-image: -webkit-linear-gradient(60deg, rgb(41, 5, 139) 50%, transparent 50%);
+    background-image: linear-gradient(60deg, rgb(41, 5, 139) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    border-radius: 45px;
+    font-family: 'poppins';
+width: 200px;
+height: 10%;
+box-shadow: 1.5px 1.5px 2px rgb(0, 0, 0);
+}
+
+
+div button:hover{
+    background-position: 0;
+    background-color: rgb(41, 5, 139);
+    color: white;
+    box-shadow: 1.5px 1.5px 2px rgb(27, 6, 85); ;
+}
+main img{
+    width:45%;
+    height: 85%;
+    padding-right: 2%;
+
+}
+.section div h1 {
+
+    text-align: left;  
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+footer ul{
+    margin:20px;
+    list-style: none;
+    display: flex;
+    margin-bottom: 0 auto;
+}
+footer li{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+    display:flex; 
+     list-style:none;
+     justify-content: center;
+     align-items: right;
+     font-size: 0 ;
+}
+footer li,img{
+    width: 40px;
+}
+@media screen and (max-width: 768px) {
+   
+   html{
+    
+    height: 100%;
+    width: 100%;
+   }
+    body {
+     width: auto;
+    overflow-x:hidden;
+     scroll-behavior: smooth;
+     overflow: initial;
+      background-repeat: no-repeat;
+    }
+    .navbar img{
+     width: 45%;
+    }
+    main{
+        flex-direction: column;
+       justify-content: space-between;
+
+    }
+    main img{
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    padding-bottom:12px ;
+    background-image: url('https://i.imgur.com/0KWzYrD.png');
+    }
+   main div{
+    text-align: center;
+        display: block;
+        justify-content: center;
+        padding-bottom: 25% ;
+        margin: 1rem;
+       padding: 1rem;
+    }
+     main div h1{
+        font-size: 35px;
+        display:block;
+       
+    }
+    main div p{
+     font-size: 20px;
+    }
+    div button{
+         position: relative;
+        margin: 0 auto;
+        margin-left: 30;
+          height: 40px;
+          width: 50%;
+          
+          
+    }
+    footer {
+      
+        margin: 10px 0 10px 0;
+        justify-content: center;
+    }
+    footer ul{
+        border-bottom: 10px;
+    }
+   
+}
